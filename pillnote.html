@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Filip Dabek - PillNote</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<meta name="description" content=" ... add description here ... " />
+	<meta name="keywords" content=" ... add keywords here ... " />
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	
+	<!-- //////// Favicon ////////  -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
+	
+	<!-- //////// Css StyleSheets ////////  -->
+	<link href="_layout/style.css"       rel="stylesheet" type="text/css" media="all"   />
+	<link href="_layout/style-print.css" rel="stylesheet" type="text/css" media="print" />
+
+	<!-- //////// jQuery ////////  -->
+	<script src="_layout/js/jquery-1.4.2.min.js" type="2274296bb09ebde1aa930e44-text/javascript"></script>
+	
+	<!-- //////// DD_belatedPNG - Png Fix for IE ////////  -->
+	<!--[if IE 6 ]>
+		<script type="text/javascript" src="_layout/js/DD_belatedPNG_0.0.7a-min.js"></script>
+		<script type="text/javascript">
+			DD_belatedPNG.fix('#header,#content,#footer');
+		</script>
+	<![endif]-->
+	
+	<!-- //////// Cufon Font Replacement ////////  -->
+	<script type="2274296bb09ebde1aa930e44-text/javascript" src="_layout/js/cufon/cufon-yui.js"></script>
+	<script type="2274296bb09ebde1aa930e44-text/javascript" src="_layout/js/cufon/hattori_hanzo.font.js"></script>
+
+	<!-- //////// Tipsy - custom Tooltips ////////  -->
+	<link rel="stylesheet" type="text/css" href="_layout/js/tipsy/css.tipsy.css" />
+	<script type="2274296bb09ebde1aa930e44-text/javascript" src="_layout/js/tipsy/jquery.tipsy.js"></script>
+
+	<!-- //////// PrettyPhoto ////////  -->
+	<link rel="stylesheet" type="text/css" href="_layout/js/prettyphoto/css.prettyPhoto.css" />
+	<script type="2274296bb09ebde1aa930e44-text/javascript" src="_layout/js/prettyphoto/jquery.prettyPhoto.js"></script>
+	
+	<!-- //////// Easy Slider ////////  -->
+	<script type="2274296bb09ebde1aa930e44-text/javascript" src="_layout/js/easyslider/jquery.easyslider.js"></script>
+	<link href="_layout/js/easyslider/css.easyslider.css" rel="stylesheet" type="text/css" />
+
+	<!-- //////// Customs JS  ////////  -->	
+	<script type="2274296bb09ebde1aa930e44-text/javascript">
+	/* <![CDATA[ */	                                         
+		$(document).ready(function(){
+		
+			// font replacement
+			if ( ! ( $.browser.msie & ($.browser.version == 6) ) )
+			{ 	
+				$("h1#name").css({'font-size':'46px', 'padding-top':'20px' , 'margin-bottom':'0px' });
+				Cufon.replace('#portfolio h2, h2.cv-section-name, h1#name, h2.title'); // using cufon with IE6 breaks the layout in some cases
+				
+			}	
+			
+			// tooltips
+			$('.tip').tipsy({gravity: 'e'});	//  apply class .tip to any <a> tag to make it's  title be displayed like a tooltip
+			
+			// lightbox
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+				theme: 'light_square',
+				hideflash: false, 		// Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto
+				wmode: 'opaque', 		// Set the flash wmode attribute
+				autoplay: true, 		// Automatically start videos: True/False
+				modal: false 			// If set to true, only the close button will close the window
+			});
+			
+			// easy slider
+			$("#slide2").easySlider({
+				auto: true, 
+				continuous: true,
+				speed: 800,
+				controlsShow: true,
+				numeric: true,
+				numericId: 'controls'
+			});
+		
+		});
+	/* ]]> */			
+	</script> 
+	
+</head>
+<body>
+	
+	<noscript>
+		<link href="_layout/nojs.css" rel="stylesheet" type="text/css" media="all" />
+		<div id="nojs">JavaScript seems to be Disabled! This website works best with JavaScript enabled.</div>
+	</noscript>
+	
+	<div id="wrap">
+	
+		<div id="header">
+			
+			<div id="block-top"></div>
+			
+			<div id="personal-info" class="fixed">
+			
+				<a id="picture-of-you" href="_content/personalBig.jpg" title="Filip Dabek" rel="prettyPhoto">
+					<img src="_content/personal.jpg" width="100" height="125" alt="" />
+				</a>
+				
+				<h1 id="name">Filip Dabek</h1>
+				<h2 id="what-you-do">Computer Science</h2>
+				
+			</div><!-- end #personal-info -->
+					
+			<ul id="nav" class="fixed">
+				<li><a href="index.html">Resume</a></li>
+				<li>/</li>
+				<li><a href="portfolio.html" class="active">Portfolio</a></li>
+				<li>/</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul><!-- end #nav -->
+
+			<div class="divider"></div>
+			
+		</div><!-- end #header -->
+		
+		<div id="content" class="fixed">
+		<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+			<h2 class="title">Portfolio</h2>	
+			<div id="portfolio">
+			
+				<div class="portfolio-item col-1 fixed">
+				
+						<div class="slider-wrap-2">
+							<div class="slider-2" id="slide2">
+								<ul>				
+									<li><img src="_content/pillnote/1.jpg" width="678" height="312" alt="" /></li>
+									<li><img src="_content/pillnote/2.jpg" width="678" height="312" alt="" /></li>
+									<li><img src="_content/pillnote/3.jpg" width="678" height="312" alt="" /></li>
+									<li><img src="_content/pillnote/4.jpg" width="678" height="312" alt="" /></li>
+									<li><img src="_content/pillnote/5.jpg" width="678" height="312" alt="" /></li>
+								</ul>
+							</div><!-- end .slider -->
+						</div><!-- end .slider-wrap -->	
+					
+				</div>
+				
+				<div class="portfolio-item col-1 fixed">
+					
+					<div class="col-2 float-left padded-right">
+						
+						<h2>PillNote</h2>
+
+						<p>Medical professionals have long struggled with the problem of medication adherence.  Diseases such
+						as hypertension, diabetes mellitus, chronic colitis, as well as many other chronic conditions are significantly
+						affected by medication non-adherence and can result in adverse patient outcomes.  Many clinical studies
+						support the necessity of interventions to improve medication adherence.</p>
+						
+						<p>TeraFlip has developed a product that effectively addresses the issue, PillNote, and has the potential
+						to improve patient outcomes in two ways. First, by providing the physician and caregiver a closer look at
+						patient compliance and secondly making a medication regimen easier to remember and follow.
+						PillNote is a simple and comprehensive application for iOS devices, soon Android and a web interface,
+						that enhances a user’s interaction with their medications.</p>
+						
+						<p>PillNote helps resolve the unmet need of an easy-to-use application that increases patient adherence
+						with chronic medication protocols.  The obvious result of our unique system includes improved patient 
+						outcomes resulting in more efficient and effective patient care.</p>
+
+					</div>
+					<div class="col-3 float-left">
+												
+						<p><strong>Project Details:</strong></p>
+						
+						<ul>
+							<li>Medication Entry</li>
+							<li>Medication Reminders</li>
+							<li>Refill Reminders</li>
+							<li>Offline Database</li>
+							<li>Image Database</li>
+							<li>Drug Search</li>
+							<li>Pill Info</li>
+							<li>Reports</li>
+							<li>Email Updates</li>
+						</ul>
+						
+						<p><strong>Live Preview:</strong>
+						   <br /><a href="http://www.pillnote.com">PillNote.com</a></p>			
+						
+					</div>
+					
+				</div><!-- end .portfolio-item -->
+			
+			</div><!-- end #portfolio -->	
+			
+		<!-- ////////////////////////////////////////////////////////////////////////////////////// -->	
+		</div><!-- end #content -->
+		
+		<div id="footer" class="fixed">
+			
+			<div class="divider2"></div>
+			
+			<p id="copyright">&copy; 2013 Filip Dabek. All rights reserved.</p>
+			<a href="pillnote.html#" id="top">&#710; Top</a>
+			
+		</div><!-- end #footer -->
+		
+	</div><!-- end #wrap -->
+	
+	<script type="2274296bb09ebde1aa930e44-text/javascript"> Cufon.now(); </script>
+
+	<!-- analytics code here -->
+
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="2274296bb09ebde1aa930e44-|49" defer></script></body>
+</html>
